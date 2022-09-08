@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>test</title> 
+</head>
+<body>
+<section class="form">
+ <h1 style="margin-left: 30px;">Есть вопросы? Мы на них ответим!</h1>
+ <h3 style="margin-left: 30px;">Просто оставте свои контакты и мы свяжемся с вами.</h3>
+ <div class="Form_True">
+  <div class="Form_polya">
+      <div class="polya">
+        <h2>Имя</h2>
+        <input type="text"  id="name" required />
+      </div>
+      <div class="polya" >
+        <h2>Почта</h2>
+        <input type="text" id="email" required />
+      </div>
+      <div class="polya" >
+        <h2>Телефон</h2>
+        <input type="text" id="phone" required/>
+      </div>
+  </div>
+  <div class="Form_Sogl">
+    <div class="Form_radio">
+      <h2 style="margin-left: 10px; margin-top: -15px;">Здесь что-то должно быть</h2>
+        <div class="pod_radio">
+          <input type="radio">
+          <h3>Здесь что-то можно выбрать</h3>
+        </div>
+        <div class="pod_radio">
+          <input type="radio">
+          <h3>Бла-бла-бла-бла</h3>
+        </div>
+        <div class="pod_radio">
+          <input type="radio">
+          <h3>И т.д. и т.п.</h3>
+        </div>
+    </div>
+        <div class="pod_checkbox">
+          <input type="checkbox">
+          <h3>Я согласен на обработку моих персональных данных</h3>
+        </div>
+        <input type="submit" class="Form_button" onclick="Prov()">
+  </div>
+ </div>
+</section>
+<script type="text/javascript">
+ function Prov() {
+  const inputName = document.getElementById("name");
+  const inputEmail = document.getElementById("email");
+  const inputPhone = document.getElementById("phone");
+  if (inputName.value == "") {
+    inputName.style.backgroundColor="#ff9090";
+     inputName.placeholder ="Поле не заполнено";
+  }
+  if (inputEmail.value == "") {
+    inputEmail.style.backgroundColor="#ff9090";
+     inputEmail.placeholder ="Поле не заполнено";
+  }
+  if (inputPhone.value == "") {
+     inputPhone.style.backgroundColor="#ff9090";
+      inputPhone.placeholder ="Поле не заполнено";
+  }
+ }
+</script>
+</body>

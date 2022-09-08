@@ -1,0 +1,100 @@
+@font-face{
+	font-family:Manrope-SemiBold;
+	src:url(../fonts/Manrope-SemiBold.ttf);
+}
+@font-face{
+	font-family:Manrope-Bold;
+	src:url(../fonts/Manrope-Bold.ttf);
+}
+@font-face{
+	font-family:Manrope-Regular;
+	src:url(../fonts/Manrope-Regular.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ffa010;
+}
+h1 {
+    font-family: Manrope-Bold;
+    font-size: 35px;
+    white-space: nowrap;
+}
+h2 {
+	font-family: Manrope-Regular;
+    font-size:20px;
+    white-space: nowrap;
+
+}
+h3 {
+	font-family: Manrope-SemiBold;
+	font-size:15px;
+	 white-space: nowrap;
+}
+input[type="text"] {
+    height: 45px;
+    width: 350px;
+    border-radius: 30px;
+    border: none;
+}
+section.form {
+    display: flex;
+    width: 1100px;
+    height: 440px;
+    background: linear-gradient(to right, #ffe739, #ffa010);
+    flex-direction: column;
+    border-radius: 50px;
+    margin-left: 10%;
+    margin-top: 60px;
+}
+.Form_polya {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+}
+.Form_True {
+    display: flex;
+    justify-content: space-around;
+}
+div.polya {
+    margin-top: 25px;
+}
+.pod_radio {
+    display: flex;
+    margin-left: 40px;
+}
+.pod_radio h3, .pod_checkbox h3  {
+    margin-left: 10px;
+}
+.pod_checkbox {
+    display: flex;
+    margin-top: 15px;
+}
+.Form_Sogl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Form_button {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background: #ff6810;
+    border: none;
+    font-family: Manrope-Bold;
+    margin-left: 180px;
+    margin-bottom: -25px;
+    cursor: pointer;
+}
+.Form_radio {
+	display: flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: space-evenly;
+    width: 400px;
+    background: linear-gradient(to right, #ff6810,#ffa614);
+    border-radius: 15px;
+}
